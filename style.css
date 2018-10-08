@@ -1,0 +1,11 @@
+body {
+    padding:10px 20px;
+    text-align: center;
+}
+ul, ol {
+    list-style-position: inside;
+}
+h1 {
+    color:deepskyblue;
+    text-transform: uppercase;
+}
