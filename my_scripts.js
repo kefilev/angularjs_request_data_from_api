@@ -19,8 +19,8 @@ myApp.controller('MyController', function($scope, $http) {
     // Get all employees from the API
     $http({
          method: 'GET',
-         url: 'https://fourth-js-interview-b392e.firebaseapp.com/employees',
-         headers: {'Authorization': 'fourth-js-interview-data'}
+         url: 'https://some-api.firebaseapp.com/employees',
+         headers: {'Authorization': 'some-password'}
     })
     .then(function successCallback(response) {
         //alert("Succesfully connected to the API");
@@ -34,7 +34,7 @@ myApp.controller('MyController', function($scope, $http) {
     $scope.getEmployeeInfo = function(id) {
 
         $http({
-            method: 'GET', url: 'https://fourth-js-interview-b392e.firebaseapp.com/employees/' + id, headers: {'Authorization': 'fourth-js-interview-data'}
+            method: 'GET', url: 'https://some-api.firebaseapp.com/employees/' + id, headers: {'Authorization': 'some-password'}
         })
         .then(function successCallback(response) {
             //alert("Succesfully connected to the API");
